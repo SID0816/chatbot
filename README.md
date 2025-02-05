@@ -83,3 +83,12 @@ Joke Query:
 "Tell me an IT joke"
 "child joke"
 "tell me a funny joke"
+
+
+Future Improvements
+
+Add more API integrations for other opertaion and chats too
+Implement user authentication for individual user
+Add conversation history persistence for traing the data
+Implement more interactive UI elements for user friendly
+Add support for multiple languages 
