@@ -1,0 +1,57 @@
+[
+    {
+        "key": "weather_webhook",
+        "url": "https://api.openweathermap.org/data/2.5/weather",
+        "payload": {
+            "q": "{city}"
+        },
+        "params": {
+            "q": "{city}"
+        },
+        "headers": {
+            "x-api-key": "30f1d2dba9e85d9c06ed6f2e17ed0bbb"
+        }
+    },
+    {
+        "key": "crypto_webhook",
+        "url": "https://customerportal.coinapi.io/",
+        "payload": {
+            "ids": "{crypto_symbol}",
+            "vs_currencies": "usd"
+        },
+        "params": {
+            "ids": "{crypto_symbol}",
+            "vs_currencies": "usd"
+        },
+        "headers": {
+            "x-api-key": "55103c4b-d215-4c18-b4b8-e9e6fa0388aa"
+        }
+    },
+    {
+        "key": "news_webhook",
+        "url": "https://newsapi.org/v2/everything",
+        "payload": {
+          "q": "{keyword}"
+        },
+        "params": {
+          "q": "{keyword}"
+        },
+        "headers": {
+          "x-api-key": "d3c56b82bb4a4ba78e019e57c90a36c1"
+        }
+    },
+    {
+        "key": "joke_webhook",
+        "url": "https://api.humorapi.com/jokes/search",
+        "payload": {
+          "q": "{keyword}"
+        },
+        "params": {
+          "q": "{keyword}"
+        },
+        "headers": {
+          "x-api-key": "45096a87053b44e6b7430e120f23bec9"
+        }
+    }
+    
+]

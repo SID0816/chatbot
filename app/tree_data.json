@@ -1,0 +1,80 @@
+{
+    "treeStructure": {
+        "id": "root",
+        "label": "Start",
+        "message": "Welcome! How can I help you?",
+        "conditions": [],
+        "actions": [],
+        "children": [
+            {
+                "id": "weather",
+                "label": "Weather",
+                "message": "The weather in {city} is:",
+                "conditions": [{"type": "contains", "value": "weather"}],
+                "actions": [
+                    {
+                        "type": "trigger_webhook",
+                        "data": {"key": "weather_webhook"}
+                    }
+                ],
+                "children": []
+            },
+            {
+                "id": "crypto",
+                "label": "Crypto",
+                "message": "Here's the price for {crypto_symbol}:",
+                "conditions": [{"type": "contains", "value": "crypto"}],
+                "actions": [
+                    {
+                        "type": "trigger_webhook",
+                        "data": {"key": "crypto_webhook"}
+                    }
+                ],
+                "children": []
+            },
+            {
+                "id": "news",
+                "label": "News",
+                "message": "Here are {source} news articles about '{keyword}':",
+                "conditions": [
+                    {"type": "contains", "value": "news"},
+                    {"type": "contains", "value": "articles"},
+                    {"type": "contains", "value": "blogs"}
+                    
+                ],
+                "actions": [
+                    {
+                        "type": "trigger_webhook",
+                        "data": {"key": "news_webhook"}
+                    }
+                ],
+                "children": []
+                
+            },
+            {
+                "id": "joke",
+                "label": "Joke",
+                "message": "Here are number jokes about '{keywords}':",
+                "conditions": [
+                    {"type": "contains", "value": "joke"},
+                    {"type": "contains", "value": "jokes"},
+                    {"type": "contains", "value": "humor"},
+                    {"type": "contains", "value": "funny"},
+                    {"type": "contains", "value": "laugh"}
+                    
+                ],
+                "actions": [
+                    {
+                        "type": "trigger_webhook",
+                        "data": {
+                            "key": "joke_webhook"
+                            
+                        }
+                    }
+                ],
+                "children": []
+            }
+
+        ]
+    }
+}
